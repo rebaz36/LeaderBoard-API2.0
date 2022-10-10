@@ -1,8 +1,11 @@
-# webpack-boilerplate
+# Leader Board Api
 
-## Template
+## API Practice
 
-this project is created to be used as a webpack template
+this project is created to practice the followings
+- using proper gitflow
+- using and interacting with APIs
+- Design Web applications using CSS
 
 
 ## Built With
@@ -33,8 +36,6 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - Microverse
-- Net Ninja
-- Traversy Media
 
 ## 📝 License
 
