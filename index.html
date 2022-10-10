@@ -13,23 +13,23 @@
         <section class="scores">
             <div class="score-header">
                 <h2>Recent Scores</h2>
-                <button type="button" id="refresh">Refresh</button>
+                <button class="button-refreash" type="button" id="refresh">Refresh</button>
             </div>
-            <ul id="list">
+            <ul class="list" id="list">
 
             </ul>
         </section>
 
-        <aside class="flex-row">
+        <section class="add-score flex-row">
             <h2>Add your Score</h2>
             <form class="flex-row">
                 <div class="inputs flex-row">
-                    <input type="text" id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z]*" required>
-                    <input type="number" id="score" name="score" placeholder="Your Score" required>
+                    <input class="input" type="text" id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z]*" required>
+                    <input class="input" type="number" id="score" name="score" placeholder="Your Score" required>
                 </div>
-                <button type="button" class="form-button" id="submit">Submit</button>
+                <button type="button" class="button-submit half" id="submit">Submit</button>
             </form>
-        </aside>
+        </section>
     </main>
 
 </body>
