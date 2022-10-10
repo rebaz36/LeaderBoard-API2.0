@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Leaderboard</title>
-</head>
+<script defer src="bundle.js"></script></head>
 <body>
     <header>
         <h1 class="header">Leaderboard</h1>
@@ -14,31 +13,21 @@
         <section class="scores">
             <div class="score-header">
                 <h2>Recent Scores</h2>
-                <button type="button">Refresh</button>
+                <button type="button" id="refresh">Refresh</button>
             </div>
-    
-            <table>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Jane Doe</td>
-                        <td>90</td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul id="list">
+
+            </ul>
         </section>
 
         <aside class="flex-row">
             <h2>Add your Score</h2>
             <form class="flex-row">
                 <div class="inputs flex-row">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z]*" required>
                     <input type="number" id="score" name="score" placeholder="Your Score" required>
                 </div>
-                <button type="button" class="form-button">Submit</button>
+                <button type="button" class="form-button" id="submit">Submit</button>
             </form>
         </aside>
     </main>

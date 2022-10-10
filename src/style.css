@@ -33,8 +33,9 @@ main {
   gap: 20px;
 }
 
-table {
+ul {
   border: 2px solid black;
+  padding: 0;
 }
 
 .flex-row {
@@ -53,4 +54,9 @@ aside {
   width: 30%;
 }
 
-tr:nth-child(even) { background-color: #f2f2f2; }
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li:nth-child(even) { background-color: #f2f2f2; }

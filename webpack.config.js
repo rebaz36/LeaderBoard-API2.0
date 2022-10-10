@@ -1,34 +1,37 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+// eslint-disable-next-line import/no-unresolved
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
-    filename: '[name].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  mode: 'development',
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
       },
     ],
   },
   devServer: {
-    static: './dist',
+    port: 9001,
+    open: true,
+    // contentBase: path.join(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
+    new HtmlWebPackPlugin({
+      template: './public/index.html',
+      title: 'Leaderboard App',
+      filename: 'index.html',
+      inject: 'head',
+      scriptLoading: 'defer',
     }),
   ],
-  optimization: {
-    runtimeChunk: 'single',
-  },
 };
