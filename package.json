@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rebaz36/webpack-boilerplate.git"
+    "url": "git+https://github.com/rebaz36/LeaderBoard-API2.0.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rebaz36/webpack-boilerplate/issues"
+    "url": "https://github.com/rebaz36/LeaderBoard-API2.0/issues"
   },
-  "homepage": "https://github.com/rebaz36/webpack-boilerplate#readme",
+  "homepage": "https://github.com/rebaz36/LeaderBoard-API2.0#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
