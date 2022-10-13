@@ -1,13 +1,24 @@
-h1 {
-  font-size: 3em;
+body {
+  padding: 4em;
+  background: white;
+  background-image: url("../public/background.jpg");
+  background-size: cover;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
+  letter-spacing: 2px;
 }
 
 .header {
-  padding: 1em 0 0 1em;
+  font-family: 'Monaco', cursive;
+  font-size: 5em;
+  letter-spacing: 4px;
+  font-weight: bold;
+  padding: 0 0 0 1em;
+  background: -webkit-linear-gradient(#821680, #c3daea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 main {
@@ -24,39 +35,112 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 1em;
+  box-shadow: 5px 5px 10px #821680;
 }
 
 .score-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
-}
-
-ul {
-  border: 2px solid black;
-  padding: 0;
+  color: #821680;
 }
 
 .flex-row {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
 }
 
-.form-button {
-  width: 50%;
+.add-score {
+  width: 35%;
+  padding: 1em;
+  box-shadow: 5px 5px 10px #c3daea;
+  color: #c3daea;
+}
+
+.button-refreash {
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px #821680;
+  background: #821680;
+  color: #c3daea;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.button-submit {
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px #c3daea;
+  background: #c3daea;
+  color: #821680;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.button-refreash:hover {
+  background: #c3daea;
+  box-shadow: 5px -5px 10px #821680;
+  color: #821680;
+}
+
+.button-submit:hover {
+  background: #821680;
+  box-shadow: 5px -5px 10px #c3daea;
+  color: #c3daea;
+}
+
+.input {
+  width: 95%;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #c3daea;
+  box-shadow: 5px 5px 10px #821680;
+  padding: 0 10px 0 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:hover {
+  border: 2px solid #821680;
+  box-shadow: -5px 5px 10px #c3daea;
+}
+
+.half {
   place-self: self-end normal;
 }
 
-aside {
-  width: 30%;
+.list {
+  padding: 1em;
 }
 
 li {
   list-style-type: none;
   padding: 10px;
+  color: white;
+  font-weight: bold;
 }
 
-li:nth-child(even) { background-color: #f2f2f2; }
+li:hover {
+  background: #821680;
+  box-shadow: 5px 5px 10px #c3daea;
+}
+
+li:nth-child(even) {
+  background-color: #c3daea;
+  color: #821680;
+}
+
+li:nth-child(odd) {
+  background-color: #821680;
+  color: #c3daea;
+}
